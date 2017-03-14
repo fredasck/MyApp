@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Hello_Word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello Word!"></TextView>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter only numbers:"
+        android:layout_below="@+id/Hello_Word"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"></TextView>
+
+
+    <EditText
+        android:id="@+id/inputDigital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@+id/label"
+        android:layout_alignParentStart="true"
+        ></EditText>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:text="OK"
+        android:layout_alignBaseline="@+id/cancle"
+        android:layout_alignBottom="@+id/cancle"
+        android:layout_alignParentEnd="true"></Button>
+
+    <Button
+        android:id="@+id/cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/inputDigital"
+        android:layout_toStartOf="@+id/ok"></Button>
+
+    <TextView
+        android:id="@+id/printText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/ok"
+        android:layout_alignParentStart="true"></TextView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="Yurii Kupriienko" />
+
+</RelativeLayout>
